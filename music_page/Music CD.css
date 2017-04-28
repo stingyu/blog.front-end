@@ -1,0 +1,60 @@
+@charset "utf-8"
+* {
+	margin:0;
+	padding: 0;
+}
+.wrap {
+	margin: 0 auto;
+	width: 930px;
+	height: 11590.390px;
+	text-align: : center;
+}
+.header {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	width: 930px;
+	height: 162px;
+
+}
+.header>.header-top {
+	margin-right: 2.5px;
+	width: 930px;
+	height: 31px;
+    background: url() reapt
+    font-size: .9em;
+    text-align: left;
+
+
+}
+.header>.header-logo {
+	padding: 0 10px;
+	width: 930px;
+	height: 86px;
+
+
+}
+.header .logo-1 {
+
+}
+.header>.header-menu {
+	width: 930px;
+	height:45px;
+
+}
+.content {
+	position: relative;
+	margin: 0 auto;
+	padding :0;
+	width: 930px;
+	height: 1317.390px;
+
+
+}
+.footer {
+	position: relative;
+	margin: 0 auto;
+	width: 930px;
+	height: 111px;
+
+}

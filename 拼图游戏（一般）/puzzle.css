@@ -1,0 +1,121 @@
+*{
+	padding:0;
+	margin:0;
+	border:0;
+}/* *是通配符，给所有元素去掉默认样式，因为有的浏览器会默认
+加上一些样式，因为有的浏览器会加上一些默认样式，这可能会给布
+局带来问题*/
+body{
+	width:100%;
+	height:100%;
+	background-color:#CFF;
+	margin-top:30px ;
+	margin-left:30px;
+}
+#container{
+	width:620px;
+	height:450px;
+	margin:10px;
+	border-radius:1px;
+	position:relative;
+
+}/*宽度和高度不能比620px*450px更小，至少要包含里面的内容*/
+#game{
+	width:450px;
+	height:450px;
+	position:absolute;
+	display:inline-block;
+	background-color:#ff3;
+	box-shadow:0 0 10px #ff3;
+
+}/*设置小方块为150px*/
+#game div{
+	position:absolute;
+	width:149px;
+	height:149px;
+	box-shadow:1px 1px 2px #fff;
+	color:red;
+	font-size:150px;
+	line-height:150px;
+	text-align:center;
+	cursor:pointer;
+	-webkit-transition:0.3s;/*浏览器前缀，兼容其他浏览器chrome*/
+	-moz-transition:0.3s;/*firefox*/
+	-o-transition:0.3s;/*ie*/
+	transition:0.3s;
+}/*小方块的大小，设置为绝对定位，这样改变位置不会影响其他元素的位置边框阴影1px
++149px=150px，transition:0.3s是一个过渡时间，是css3的属性，让属性改变呈现过渡动画
+*/
+#game div:hover{
+     color:blue;
+}/*方块设置鼠标悬停动画，css伪类选择器，当鼠标悬停时，会用这里的属性代替上面的属性，把字体颜色改变了*/
+#control{
+	width:150px;
+	height:450px;
+	display:inline-block;
+	float:right;
+	color:red;
+}/*diplay:inline-block使得元素呈现块状元素的特性，这样既可改变大小，勇士也会具有行内元素的特性，使得
+不会占据一行空间，元素浮动在右边；*/;
+#control rowspan{
+	height:25px;
+	color:black;
+	margin-top:10px;
+	font-size:20px;
+}/*设置按钮区的共同样式*/
+#start{
+	width:100px;
+	height:30px;
+	background-color:#f30;
+	color:#fff;
+	text-shadow:1px 1px 2px #000;
+	box-shadow:2px 2px 5px #f30;
+	border-radius:5px;
+	text-align:center;
+	font-size:25px;
+    display:inline-block;
+    cursor:pointer;
+    margin:10px 0px 10px 0;
+}/*cursor:pointer设置鼠标形状；*/
+#reset{
+	width:100px;
+	height:30px;
+	background-color:#f30;
+	color:#fff;
+	text-shadow:1px 1px 2px #000;/*字体阴影*/
+	box-shadow:2px 2px 5px #f30;/*盒子阴影*/
+	border-radius:5px;/*圆角属性*/
+	display:inline-block;
+	text-align:center;
+	font-size:25px;
+	cursor:pointer;
+}
+#d1{
+	left:0px;
+}
+#d2{
+	left:150px;
+}
+#d3{
+	left:300px;
+}
+#d4{
+	left:0px;
+	top:150px;
+}
+#d5{
+	left:150px;
+	top:150px;
+}
+#d6{
+	left:300px;
+	top:150px;
+}
+#d7{
+	left:0px;
+	top:300px;
+}
+#d8{
+	left:150px;
+	top:300px;
+}
